@@ -51,7 +51,7 @@ module AdminPermisson
   class Admin < User
   include AdminPermisson
   def admin_login
-    self.login
+    login
   end
 end
   
@@ -78,3 +78,4 @@ end
   buyer.buy
   
   buyer.change_password = 'new_password'
+  my_admin.login
