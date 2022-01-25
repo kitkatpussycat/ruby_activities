@@ -1,0 +1,4 @@
+SELECT COUNT(id) from students;
+SELECT * from students WHERE location='Manila';
+SELECT AVG(age) from students;
+Select * from students order by age DESC;
