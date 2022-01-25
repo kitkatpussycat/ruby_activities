@@ -141,13 +141,17 @@
 def sum(nums, target)
 
     arr=[]
+    arr1=[]
 
     for i in 0..nums.length-1
-        if nums[i] + nums[nums.length-1-i] == target
-            arr.push(i, nums.length-1-i)
+        j = i + 1
+        for j in j..nums.length-1
+            if nums[i] + nums[j] == target
+                arr.push(i, j)
+            end
         end
     end
-    print arr
+        print arr
 end
 
-sum([3, 2, 4], 6)
+sum([2, 7, 11, 15], 9)
